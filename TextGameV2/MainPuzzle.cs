@@ -1,58 +1,59 @@
 ﻿using System;
-
+using TextGameV2.Domain;
+using TextGameV2.Domain.Characters;
+using TextGameV2.Domain.Items;
+using TextGameV2.Domain.Map;
 
 namespace TextGameV2
 {
     class MainPuzzle
     {
-        public static dynamic HeroObj;
-        public static dynamic backpackObject;
-        public static dynamic HealthPotion;
         static void Main(string[] args)
         {
             Console.WriteLine("What's your name?:");
             string heroName = Console.ReadLine();
 
-            Weapon weaponObject = new Weapon();
-            Armour armourObject = new Armour();
+            var weapon = new Weapon();
+            var armour = new Armour();
 
-            backpackObject = new Backpacks();
+            armour.ArmourName = "Basic armour";
+            weapon.WeaponName = "Basic weapon";
 
-            armourObject.ArmourName = "Basic armour";
+            var hero = new Hero
+            {
+                Name = heroName,
+                Armour = armour,
+                Weapon = weapon,
+                Backpack = new Backpack()
+            };
 
-            weaponObject.WeaponName = "Basic weapon";
+            var healthPotion = new HealthPotion();
+            hero.Backpack.AddItem(healthPotion);
 
-            HealthPotion = new HealthPotion();
+            Console.WriteLine("Hello " + hero.Name);
+            Console.WriteLine("You wield " + hero.Weapon.WeaponName + " and you have " + hero.Armour.ArmourName + " on yourself.");
 
-            HeroObj = new Hero();
-            HeroObj.Name = heroName;
-            HeroObj.armour = armourObject;
-            HeroObj.weapon = weaponObject;
-
-            Console.WriteLine("Hello " + HeroObj.Name);
-            Console.WriteLine("You wield " + HeroObj.weapon.WeaponName + " and you have " + HeroObj.armour.ArmourName + " on yourself.");
-
-            Map mapObject = new Map();
+            var map = new Map(hero);
 
             while (true)
             {
-                Console.WriteLine("Where do you want to go " + HeroObj.Name);
+                Console.WriteLine("Where do you want to go " + hero.Name);
                 string WayChoice = Console.ReadLine();
                 if (WayChoice == "n")
                 {
-                    mapObject.GoNorth();
+                    map.Go(Direction.North);
                 }
                 else if (WayChoice == "s")
                 {
-                    mapObject.GoSouth();
+                    map.Go(Direction.South);
                 }
                 else if (WayChoice == "w")
                 {
-                    mapObject.GoWest();
+                    map.Go(Direction.West);
                 }
                 else if (WayChoice == "e")
                 {
-                    mapObject.GoEast();
+                    map.Go(Direction.East);
                 }
             }
         }

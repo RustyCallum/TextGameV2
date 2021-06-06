@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TextGameV2
+namespace TextGameV2.Domain.Items
 {
-    interface IItem
+    public interface IItem
     {
         string Name { get; set; }
     }

@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TextGameV2
+namespace TextGameV2.Domain.Items
 {
-    class Backpacks : IItem
+    public class Backpack : IItem
     {
         public string Name { get; set; }
         public int Space { get; set; } = 6;
 
         public List<IItem> ListOfItems;
 
-        public Backpacks()
+        public Backpack()
         {
             ListOfItems = new List<IItem>();
             ListOfItems.Capacity = Space;
