@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TextGameV2.Domain.Characters;
 
-namespace TextGameV2
+namespace TextGameV2.Domain.Items
 {
     public class HealthPotion : IItem
     {

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using TextGameV2.Actions;
+using TextGameV2.Domain.Items;
 
-namespace TextGameV2
+namespace TextGameV2.Domain.Characters
 {
     public class Hero
     {

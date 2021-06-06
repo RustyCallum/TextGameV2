@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
 
-namespace TextGameV2
+namespace TextGameV2.Domain.Characters
 {
     public static class MonsterFactory
     {

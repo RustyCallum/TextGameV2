@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 using TextGameV2.Domain;
 
-namespace TextGameV2
+namespace TextGameV2.Domain.Map
 {
     public static class LocationFactory
     {

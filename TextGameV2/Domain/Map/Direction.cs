@@ -1,4 +1,4 @@
-﻿namespace TextGameV2.Domain
+﻿namespace TextGameV2.Domain.Map
 {
     public enum Direction
     {

@@ -1,4 +1,6 @@
-﻿namespace TextGameV2.Domain
+﻿using TextGameV2.Domain.Characters;
+
+namespace TextGameV2.Domain.Map
 {
     public interface ILocation
     {

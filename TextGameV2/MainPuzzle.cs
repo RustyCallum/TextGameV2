@@ -1,5 +1,8 @@
 ﻿using System;
 using TextGameV2.Domain;
+using TextGameV2.Domain.Characters;
+using TextGameV2.Domain.Items;
+using TextGameV2.Domain.Map;
 
 namespace TextGameV2
 {

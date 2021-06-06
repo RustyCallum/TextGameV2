@@ -1,6 +1,7 @@
 ﻿using System;
+using TextGameV2.Domain.Characters;
 
-namespace TextGameV2.Domain
+namespace TextGameV2.Domain.Map
 {
     public class Map
     {
