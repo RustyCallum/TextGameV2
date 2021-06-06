@@ -1,0 +1,82 @@
+[
+	{
+		"Id": 1,
+		"Name": "Spider",
+		"AttackDamage": 8,
+		"Health": 80,
+		"Armour": 3,
+		"IsHard": false,
+		"MinReward": 20,
+		"MaxReward": 30
+	},
+	{	
+		"Id": 2,
+		"Name": "Ork",
+		"AttackDamage": 10,
+		"Health": 100,
+		"Armour": 6,
+		"IsHard": false,
+		"MinReward": 20,
+		"MaxReward": 30
+	},
+	{
+		"Id": 3,	
+		"Name": "Skeleton",
+		"AttackDamage": 4,
+		"Health": 40,
+		"Armour": 2,
+		"IsHard": false,
+		"MinReward": 20,
+		"MaxReward": 30
+	},
+	{	
+		"Id": 4,
+		"Name": "Goblin",
+		"AttackDamage": 6,
+		"Health": 90,
+		"Armour": 3,
+		"IsHard": false,
+		"MinReward": 20,
+		"MaxReward": 30
+	},
+	{	
+		"Id": 5,
+		"Name": "Wolf",
+		"AttackDamage": 3,
+		"Health": 50,
+		"Armour": 2,
+		"IsHard": false,
+		"MinReward": 20,
+		"MaxReward": 30
+	},
+	{	
+		"Id": 6,
+		"Name": "Undead Zombie",
+		"AttackDamage": 6,
+		"Health": 60,
+		"Armour": 4,
+		"IsHard": false,
+		"MinReward": 20,
+		"MaxReward": 30
+	},
+	{	
+		"Id": 7,
+		"Name": "Ogre",
+		"AttackDamage": 9,
+		"Health": 110,
+		"Armour": 5,
+		"IsHard": false,
+		"MinReward": 20,
+		"MaxReward": 30
+	},
+	{	
+		"Id": 8,
+		"Name": "Bandit",
+		"AttackDamage": 7,
+		"Health": 100,
+		"Armour": 5,
+		"IsHard": false,
+		"MinReward": 20,
+		"MaxReward": 30
+	}
+]
