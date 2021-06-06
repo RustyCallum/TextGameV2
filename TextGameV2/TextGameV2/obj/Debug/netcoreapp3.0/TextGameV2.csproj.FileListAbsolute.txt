@@ -1,0 +1,15 @@
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\bin\Debug\netcoreapp3.0\TextGameV2.exe
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\bin\Debug\netcoreapp3.0\TextGameV2.deps.json
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\bin\Debug\netcoreapp3.0\TextGameV2.runtimeconfig.json
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\bin\Debug\netcoreapp3.0\TextGameV2.runtimeconfig.dev.json
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\bin\Debug\netcoreapp3.0\TextGameV2.dll
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\bin\Debug\netcoreapp3.0\TextGameV2.pdb
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp3.0\TextGameV2.csproj.AssemblyReference.cache
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp3.0\TextGameV2.AssemblyInfoInputs.cache
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp3.0\TextGameV2.AssemblyInfo.cs
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp3.0\TextGameV2.csproj.CoreCompileInputs.cache
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp3.0\TextGameV2.dll
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp3.0\TextGameV2.pdb
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp3.0\TextGameV2.genruntimeconfig.cache
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\bin\Debug\netcoreapp3.0\Configs\Locations.json.txt
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\bin\Debug\netcoreapp3.0\Configs\Monsters.json.txt

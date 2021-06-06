@@ -12,7 +12,7 @@ namespace TextGameV2
 
         static LocationFactory()
         {
-            var fileName = "C:/Users/Sylwia/Desktop/TextGameV2/TextGameV2/TextGameV2/Locations.json.txt";
+            var fileName = "Configs/Locations.json.txt";
             var jsonString = File.ReadAllText(fileName);
             _locations = JsonSerializer.Deserialize<List<Location>>(jsonString);
         }

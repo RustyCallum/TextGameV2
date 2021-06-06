@@ -1,0 +1,4 @@
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp2.1\TextGameV2.csprojAssemblyReference.cache
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp2.1\TextGameV2.csproj.CoreCompileInputs.cache
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp2.1\TextGameV2.AssemblyInfoInputs.cache
+C:\Users\Aleksander1\Desktop\TextGameV2\TextGameV2\TextGameV2\obj\Debug\netcoreapp2.1\TextGameV2.AssemblyInfo.cs

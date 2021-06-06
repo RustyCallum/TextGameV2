@@ -12,7 +12,7 @@ namespace TextGameV2
 
         static MonsterFactory()
         {
-            var fileName = "C:/Users/Sylwia/Desktop/TextGameV2/TextGameV2/TextGameV2/Monsters.json.txt";
+            var fileName = "Configs/Monsters.json.txt";
             var jsonString = File.ReadAllText(fileName);
             _monsters = JsonSerializer.Deserialize<List<Monster>>(jsonString);
         }
