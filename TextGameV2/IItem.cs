@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TextGameV2
 {
-    interface IItem
+    public interface IItem
     {
         string Name { get; set; }
     }

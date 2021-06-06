@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
+using TextGameV2.Domain;
 
 namespace TextGameV2
 {
@@ -17,7 +18,7 @@ namespace TextGameV2
             _locations = JsonSerializer.Deserialize<List<Location>>(jsonString);
         }
 
-        public static Location CreateLocation()
+        public static ILocation CreateLocation()
         {
             var rd = new Random();
             var randomloc = rd.Next(0, 7);

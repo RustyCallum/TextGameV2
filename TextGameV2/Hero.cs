@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TextGameV2.Actions;
 
 namespace TextGameV2
 {
@@ -13,9 +14,9 @@ namespace TextGameV2
 
         public int DamageTaken;
 
-        public dynamic armour;
-        public dynamic weapon;
-        public dynamic backpack;
+        public dynamic Armour;
+        public dynamic Weapon;
+        public Backpack Backpack;
 
         public void TakeDamage()
         {
@@ -25,9 +26,9 @@ namespace TextGameV2
         {
             Console.WriteLine("You have " + _health + " health!");
         }
-        public void GetReward()
+        public void GetReward(Monster monster)
         {
-            _money += Fighting.MonsterObj.AmountOfReward;
+            _money += monster.AmountOfReward;
         }
     }
 }

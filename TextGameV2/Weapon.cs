@@ -9,6 +9,6 @@ namespace TextGameV2
         public int AttackDamage = 10;
         public int WeaponDurability = 100;
         public string WeaponName;
-        public string WeaponRarity;
+        //public string WeaponRarity;
     }
 }

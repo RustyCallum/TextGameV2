@@ -9,6 +9,6 @@ namespace TextGameV2
         public int ArmourAmount = 8;
         public int ArmourDurability = 100;
         public string ArmourName;
-        public string ArmourRarity;
+        //public string ArmourRarity;
     }
 }
