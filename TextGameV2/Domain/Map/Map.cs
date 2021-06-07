@@ -6,6 +6,7 @@ namespace TextGameV2.Domain.Map
     public class Map
     {
         private readonly ILocation[,] _map;
+        private readonly ILocationFactory _locationfactory;
         private readonly Hero _hero;
         private readonly int _sizeX = 11;
         private readonly int _sizeY = 11;
@@ -14,8 +15,9 @@ namespace TextGameV2.Domain.Map
 
         public Map(Hero hero)
         {
+            _locationfactory = new LocationFactory();
             _map = new ILocation[_sizeX, _sizeY];
-            _map[_currentX, _currentY] = LocationFactory.CreateLocation();
+            _map[_currentX, _currentY] = _locationfactory.CreateLocation();
             _hero = hero;
         }
 
@@ -29,8 +31,12 @@ namespace TextGameV2.Domain.Map
                 case Direction.South:
                     ChangeCoordinates(_currentX, _currentY - 1);
                     break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(direction), $"Not expected direction value: {direction}");
+                case Direction.East:
+                    ChangeCoordinates(_currentX + 1, _currentY);
+                    break;
+                case Direction.West:
+                    ChangeCoordinates(_currentX - 1, _currentY);
+                    break;
             };
         }
 
@@ -47,7 +53,7 @@ namespace TextGameV2.Domain.Map
 
             if (_map[_currentX, _currentY] == null)
             {
-                _map[_currentX, _currentY] = LocationFactory.CreateLocation();
+                _map[_currentX, _currentY] = _locationfactory.CreateLocation();
             }
             _map[_currentX, _currentY].EnterHero(_hero);
         }

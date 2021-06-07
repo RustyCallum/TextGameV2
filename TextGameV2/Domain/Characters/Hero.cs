@@ -15,8 +15,8 @@ namespace TextGameV2.Domain.Characters
 
         public int DamageTaken;
 
-        public dynamic Armour;
-        public dynamic Weapon;
+        public Armour Armour;
+        public Weapon Weapon;
         public Backpack Backpack;
 
         public void TakeDamage()

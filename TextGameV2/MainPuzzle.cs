@@ -16,8 +16,8 @@ namespace TextGameV2
             var weapon = new Weapon();
             var armour = new Armour();
 
-            armour.ArmourName = "Basic armour";
-            weapon.WeaponName = "Basic weapon";
+            armour.Name = "Basic armour";
+            weapon.Name = "Basic weapon";
 
             var hero = new Hero
             {
@@ -31,7 +31,7 @@ namespace TextGameV2
             hero.Backpack.AddItem(healthPotion);
 
             Console.WriteLine("Hello " + hero.Name);
-            Console.WriteLine("You wield " + hero.Weapon.WeaponName + " and you have " + hero.Armour.ArmourName + " on yourself.");
+            Console.WriteLine("You wield " + hero.Weapon.Name + " and you have " + hero.Armour.Name + " on yourself.");
 
             var map = new Map(hero);
 

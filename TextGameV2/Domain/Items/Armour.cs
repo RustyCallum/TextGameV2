@@ -4,11 +4,11 @@ using System.Text;
 
 namespace TextGameV2.Domain.Items
 {
-    class Armour
+    public class Armour : IItem
     {
+        public string Name { get; set; }
         public int ArmourAmount = 8;
         public int ArmourDurability = 100;
-        public string ArmourName;
         //public string ArmourRarity;
     }
 }
