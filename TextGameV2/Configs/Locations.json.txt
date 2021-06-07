@@ -54,6 +54,12 @@
 		"RequireHard": false, 
 		"CanYouMine": false,
 		"CanLoot": true
+	},
+	{
+		"Id": 9,
+		"Name": "City",
+		"RequireHard": false, 
+		"CanYouMine": false,
+		"CanLoot": false
 	}
-
 ]

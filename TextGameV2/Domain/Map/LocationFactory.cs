@@ -20,9 +20,9 @@ namespace TextGameV2.Domain.Map
         public ILocation CreateLocation()
         {
             var rd = new Random();
-            var randomloc = rd.Next(0, 7);
+            var randomloc = rd.Next(0, 8);
 
-            return _locations[randomloc];
+            return _locations[8];
         }
     }
 }

@@ -7,6 +7,7 @@ namespace TextGameV2.Domain.Map
     {
         private readonly ILocation[,] _map;
         private readonly ILocationFactory _locationfactory;
+        private readonly ICity _city;
         private readonly Hero _hero;
         private readonly int _sizeX = 11;
         private readonly int _sizeY = 11;
@@ -15,6 +16,7 @@ namespace TextGameV2.Domain.Map
 
         public Map(Hero hero)
         {
+            _city = new City(_hero);
             _locationfactory = new LocationFactory();
             _map = new ILocation[_sizeX, _sizeY];
             _map[_currentX, _currentY] = _locationfactory.CreateLocation();
@@ -54,6 +56,11 @@ namespace TextGameV2.Domain.Map
             if (_map[_currentX, _currentY] == null)
             {
                 _map[_currentX, _currentY] = _locationfactory.CreateLocation();
+                
+                if(_map[_currentX, _currentY].Name == "City")
+                {
+                    _city.InsideCity(_hero);
+                }
             }
             _map[_currentX, _currentY].EnterHero(_hero);
         }

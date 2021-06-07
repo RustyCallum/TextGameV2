@@ -6,18 +6,18 @@ using System.Text.Json;
 
 namespace TextGameV2.Domain.Characters
 {
-    public static class MonsterFactory
+    public class MonsterFactory : IMonsterFactory
     {
-        private static readonly List<Monster> _monsters;
+        private readonly List<Monster> _monsters;
 
-        static MonsterFactory()
+        public MonsterFactory()
         {
             var fileName = "Configs/Monsters.json.txt";
             var jsonString = File.ReadAllText(fileName);
             _monsters = JsonSerializer.Deserialize<List<Monster>>(jsonString);
         }
 
-        public static Monster MonsterCreate()
+        public Monster MonsterCreate()
         {
             var rd = new Random();
             var randomMonster = rd.Next(0, 7);

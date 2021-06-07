@@ -4,9 +4,9 @@ using TextGameV2.Domain.Items;
 
 namespace TextGameV2.Actions
 {
-    public class FightAction
+    public class FightAction : IFightAction
     {
-        public static void Fight(Hero hero, Monster monster)
+        public void Fight(Hero hero, Monster monster)
         {
             Console.WriteLine("You are fighting with " + monster.Name);
             while (monster.Health > 0)

@@ -10,7 +10,7 @@ namespace TextGameV2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What's your name?:");
+            Console.Write("What's your name?:");
             string heroName = Console.ReadLine();
 
             var weapon = new Weapon();
