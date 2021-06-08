@@ -22,7 +22,7 @@ namespace TextGameV2.Domain.Map
             var rd = new Random();
             var randomloc = rd.Next(0, 8);
 
-            return _locations[8];
+            return _locations[randomloc];
         }
     }
 }

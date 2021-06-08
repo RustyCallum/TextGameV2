@@ -5,8 +5,8 @@ using TextGameV2.Domain.Characters;
 
 namespace TextGameV2.Domain.Map
 {
-    interface ICity
+    interface IBuilding
     {
-        void InsideCity(Hero hero);
+        void Enter(Hero hero);
     }
 }
