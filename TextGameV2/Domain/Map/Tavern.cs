@@ -7,11 +7,10 @@ namespace TextGameV2.Domain.Map
 {
     public class Tavern : IBuilding
     {
-        private readonly Hero _hero;
 
-        public Tavern(Hero hero)
+        public Tavern()
         {
-            _hero = hero;
+
         }
 
         public void Enter(Hero hero)
@@ -29,7 +28,7 @@ namespace TextGameV2.Domain.Map
                         break;
 
                     case "s":
-                        TradeWithTavernkeeper(_hero);
+                        TradeWithTavernkeeper(hero);
                         break;
 
                     case "e":
@@ -46,7 +45,7 @@ namespace TextGameV2.Domain.Map
                 Console.WriteLine("You don't have enough money to buy a drink");
                 return;
             }
-            _hero.DrinkInTavern();
+            hero.DrinkInTavern();
             Console.WriteLine("You rested while drinking at the tavern and restored 10 health");
         }
 

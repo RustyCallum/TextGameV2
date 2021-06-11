@@ -7,16 +7,14 @@ namespace TextGameV2.Domain.Map
 {
     public class City : ICity
     {
-        private readonly Hero _hero;
         private string _nameofcity = "Novigrad";
         private readonly IBuilding _tavern;
 
-        public City(Hero hero)
+        public City()
         {
-            _hero = hero;
-            _tavern = new Tavern(_hero);
+            _tavern = new Tavern();
         }
-        public void InsideCity(Hero hero)
+        public void EnterCity(Hero hero)
         {
             Console.WriteLine($"You are now inside a city of {_nameofcity} {hero.Name}, what do you want to do?");
             while (true)

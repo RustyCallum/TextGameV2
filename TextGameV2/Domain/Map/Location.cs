@@ -14,13 +14,13 @@ namespace TextGameV2.Domain.Map
         public bool CanYouMine { get; set; }
         public bool CanLoot { get; set; }
 
-        private readonly IMonsterFactory _monsterfactory;
-        private readonly IFightAction _fightaction;
+        private readonly IMonsterFactory _monsterFactory;
+        private readonly IFightAction _fightAction;
 
         public Location()
         {
-            _fightaction = new FightAction();
-            _monsterfactory = new MonsterFactory();
+            _fightAction = new FightAction();
+            _monsterFactory = new MonsterFactory();
         }
         public void EnterHero(Hero hero)
         {
@@ -29,7 +29,7 @@ namespace TextGameV2.Domain.Map
             var willWeFight = rdNum.Next(0, 100);
             if (willWeFight < 30)
             {
-                //_fightaction.Fight(hero, _monsterfactory.MonsterCreate());
+                //_fightAction.Fight(hero, _monsterFactory.MonsterCreate());
             }
         }
         public void LeavingHero()

@@ -7,6 +7,6 @@ namespace TextGameV2.Domain.Map
 {
     interface ICity
     {
-        void InsideCity(Hero hero);
+        void EnterCity(Hero hero);
     }
 }
