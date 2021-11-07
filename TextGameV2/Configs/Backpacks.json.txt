@@ -1,14 +1,20 @@
 [
 	{
 		"Name": "Basic Backpack",
-		"Space": 4
+		"Space": 4,
+		"MinPrice": 10,
+		"MaxPrice": 20
 	},
 	{
 		"Name": "Better Backpack",
-		"Space": 8
+		"Space": 8,
+		"MinPrice": 50,
+		"MaxPrice": 60
 	},
 	{
 		"Name": "Best Backpack",
-		"Space": 16
+		"Space": 16,
+		"MinPrice": 90,
+		"MaxPrice": 100
 	}
 ]

@@ -11,7 +11,7 @@ namespace TextGameV2.Domain.Characters
         public string Name { get; set; }
 
         private int _health = 100;
-        private int _money = 50;
+        public int Money { get; private set; } = 50;
 
         public int DamageTaken;
 
@@ -29,7 +29,18 @@ namespace TextGameV2.Domain.Characters
         }
         public void GetReward(Monster monster)
         {
-            _money += monster.AmountOfReward;
+            Money += monster.AmountOfReward;
+        }
+
+        public void ShowEquipment()
+        {
+            Console.WriteLine($"You have {Weapon.Name} in your weapon slot and {Armour.Name} in your armour slot");
+        }
+
+        public void DrinkInTavern()
+        {
+            Money -= 80;
+            _health += 10;
         }
     }
 }

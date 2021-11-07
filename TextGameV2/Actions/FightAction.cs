@@ -4,9 +4,9 @@ using TextGameV2.Domain.Items;
 
 namespace TextGameV2.Actions
 {
-    public class FightAction
+    public class FightAction : IFightAction
     {
-        public static void Fight(Hero hero, Monster monster)
+        public void Fight(Hero hero, Monster monster)
         {
             Console.WriteLine("You are fighting with " + monster.Name);
             while (monster.Health > 0)
@@ -16,7 +16,7 @@ namespace TextGameV2.Actions
                 if (MonsterAction == 0)
                 {
                     Console.WriteLine(monster.Name + " is going to attack!");
-                    Console.WriteLine("a = Attack d = Defense i = Inventory");
+                    Console.WriteLine("a = Attack d = Defense i = Inventory e = Current hero equipment");
                     Console.WriteLine("What are you going to do?: ");
                     string PlayerAction = Console.ReadLine();
 
@@ -36,12 +36,21 @@ namespace TextGameV2.Actions
                         Console.WriteLine(monster.Name + " has " + monster.Health + " health!");
                         hero.DisplayHealth();
                     }
+                    else if (PlayerAction == "i")
+                    {
+                        Console.WriteLine(hero.Backpack.Name);
+                        hero.Backpack.ListItems();
+                    }
+                    else if (PlayerAction == "e")
+                    {
+                        hero.ShowEquipment();
+                    }
 
                 }
                 else if (MonsterAction == 1)
                 {
                     Console.WriteLine(monster.Name + " is going to defend!");
-                    Console.WriteLine("a = Attack d = Defense i = Inventory");
+                    Console.WriteLine("a = Attack d = Defense i = Inventory e = Current hero equipment");
                     Console.WriteLine("What are you going to do?: ");
                     string PlayerAction = Console.ReadLine();
                     if (PlayerAction == "a")
@@ -57,11 +66,20 @@ namespace TextGameV2.Actions
                         Console.WriteLine(monster.Name + " has " + monster.Health + " health!");
                         hero.DisplayHealth();
                     }
+                    else if (PlayerAction == "i")
+                    {
+                        Console.WriteLine(hero.Backpack.Name);
+                        hero.Backpack.ListItems();
+                    }
+                    else if (PlayerAction == "e")
+                    {
+                        hero.ShowEquipment();
+                    }
                 }
                 else if (MonsterAction == 2)
                 {
                     Console.WriteLine(monster.Name + " is going to do nothing now!");
-                    Console.WriteLine("a = Attack d = Defense i = Inventory");
+                    Console.WriteLine("a = Attack d = Defense i = Inventory e = Current hero equipment");
                     Console.WriteLine("What are you going to do?: ");
                     string PlayerAction = Console.ReadLine();
                     if (PlayerAction == "a")
@@ -77,11 +95,20 @@ namespace TextGameV2.Actions
                         Console.WriteLine(monster.Name + " has " + monster.Health + " health!");
                         hero.DisplayHealth();
                     }
+                    else if (PlayerAction == "i")
+                    {
+                        Console.WriteLine(hero.Backpack.Name);
+                        hero.Backpack.ListItems();
+                    }
+                    else if (PlayerAction == "e")
+                    {
+                        hero.ShowEquipment();
+                    }
                 }
                 else if (MonsterAction == 3)
                 {
                     Console.WriteLine("You don't know what " + monster.Name + " is going to do!");
-                    Console.WriteLine("a = Attack d = Defense i = Inventory");
+                    Console.WriteLine("a = Attack d = Defense i = Inventory e = Current hero equipment");
                     Console.WriteLine("What are you going to do?: ");
                     string PlayerAction = Console.ReadLine();
                     if (PlayerAction == "a")
@@ -99,6 +126,15 @@ namespace TextGameV2.Actions
                         hero.TakeDamage();
                         Console.WriteLine(monster.Name + " has " + monster.Health + " health!");
                         hero.DisplayHealth();
+                    }
+                    else if (PlayerAction == "i")
+                    {
+                        Console.WriteLine(hero.Backpack.Name);
+                        hero.Backpack.ListItems();
+                    }
+                    else if (PlayerAction == "e")
+                    {
+                        hero.ShowEquipment();
                     }
                 }
 
