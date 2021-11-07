@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 using TextGameV2.Domain.Characters;
+using TextGameV2.Actions;
 
 namespace TextGameV2.Domain.Map
 {
     public class Tavern : IBuilding
     {
+        private readonly ITrade _trade;
 
         public Tavern()
         {
-
+            _trade = new Trade();
         }
 
         public void Enter(Hero hero)
@@ -51,7 +53,7 @@ namespace TextGameV2.Domain.Map
 
         public void TradeWithTavernkeeper(Hero hero)
         {
-            return;
+            _trade.ShowSale();
         }
     }
 }

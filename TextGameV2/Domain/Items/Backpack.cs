@@ -6,26 +6,39 @@ namespace TextGameV2.Domain.Items
 {
     public class Backpack : IItem
     {
-        public string Name { get; set; }
-        public int Space { get; set; } = 6;
+        //Determinates price
+        public int MinPrice { get; set; }
+        public int MaxPrice { get; set; }
+        public int FinalPrice { get; set; }
 
-        public List<IItem> ListOfItems;
+        public string Name { get; set; }
+        public int Space { get; set; }
+
+        public List<IItem> Items;
 
         public Backpack()
         {
-            ListOfItems = new List<IItem>();
-            ListOfItems.Capacity = Space;
+            Items = new List<IItem>();
+            Items.Capacity = Space;
         }
 
         public void AddItem(IItem item)
         {
-            if (ListOfItems.Count < Space)
+            if (Items.Count < Space)
             { 
-                ListOfItems.Add(item);
+                Items.Add(item);
             }
-            else if (ListOfItems.Count >= Space)
+            else if (Items.Count >= Space)
             {
                 Console.WriteLine("You don't have enough space");
+            }
+        }
+
+        public void ListItems()
+        {
+            foreach(var item in Items)
+            {
+                Console.WriteLine(item.Name);
             }
         }
     }

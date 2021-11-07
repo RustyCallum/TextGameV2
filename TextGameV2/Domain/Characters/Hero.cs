@@ -32,6 +32,11 @@ namespace TextGameV2.Domain.Characters
             Money += monster.AmountOfReward;
         }
 
+        public void ShowEquipment()
+        {
+            Console.WriteLine($"You have {Weapon.Name} in your weapon slot and {Armour.Name} in your armour slot");
+        }
+
         public void DrinkInTavern()
         {
             Money -= 80;

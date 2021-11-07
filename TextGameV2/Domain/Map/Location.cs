@@ -29,7 +29,7 @@ namespace TextGameV2.Domain.Map
             var willWeFight = rdNum.Next(0, 100);
             if (willWeFight < 30)
             {
-                //_fightAction.Fight(hero, _monsterFactory.MonsterCreate());
+                _fightAction.Fight(hero, _monsterFactory.MonsterCreate());
             }
         }
         public void LeavingHero()

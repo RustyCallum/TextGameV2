@@ -1,5 +1,4 @@
 ﻿using System;
-using TextGameV2.Domain;
 using TextGameV2.Domain.Characters;
 using TextGameV2.Domain.Items;
 using TextGameV2.Domain.Map;
@@ -10,9 +9,11 @@ namespace TextGameV2
     {
         static void Main(string[] args)
         {
+
             Console.Write("What's your name?:");
             string heroName = Console.ReadLine();
 
+            var backpack = new BackpackCreator().CreateBackpack();
             var weapon = new Weapon();
             var armour = new Armour();
 
@@ -24,7 +25,7 @@ namespace TextGameV2
                 Name = heroName,
                 Armour = armour,
                 Weapon = weapon,
-                Backpack = new Backpack()
+                Backpack = backpack
             };
 
             var healthPotion = new HealthPotion();
@@ -54,6 +55,10 @@ namespace TextGameV2
                 else if (WayChoice == "e")
                 {
                     map.Go(Direction.East);
+                }
+                else if (WayChoice == "m")
+                {
+                    
                 }
             }
         }
